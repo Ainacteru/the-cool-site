@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+      
+jobs:
+  deploy:
+    runs-on: ubuntu:latest
+    steps:
+      - run: echo "Deploying Backend!"
+      - run: curl -d "d=back" ${{ secrets.LOCATION }}
