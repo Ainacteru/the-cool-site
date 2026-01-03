@@ -1,14 +1,14 @@
-const http = require('http');
-const ew = require('./ew.js');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-
-  res.end(ew.bleh()+ '\n');
-});
+const app = express();
 
 const PORT = 3001;
 
-server.listen(PORT, () => {
+app.use(express.json());
+
+app.use('/', router);
+
+app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });

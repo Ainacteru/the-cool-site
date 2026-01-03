@@ -1,0 +1,23 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ainacteru/the-cool-site.git"
+  },
+  "author": "Ainacteru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ainacteru/the-cool-site/issues"
+  },
+  "homepage": "https://github.com/Ainacteru/the-cool-site#readme",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "express": "^5.2.1"
+  }
+}
