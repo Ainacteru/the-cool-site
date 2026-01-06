@@ -4,3 +4,7 @@ exports.bleh = async (req, res) => {
   console.log(`${ip} visited!`);
   res.send({ message: `Hello from the backend! Your IP is ${ip}` });
 };
+
+exports.heartbeat = async (req, res) => {
+  res.send({ message : `hi!`});
+}
